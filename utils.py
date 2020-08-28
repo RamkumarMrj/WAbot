@@ -15,6 +15,3 @@ def detect_intent_from_text(text, session_id, language_code='en'):
 def fetch_reply():
     response = detect_intent_from_text("say joke", 12314)
     return response.fulfillment_text
-
-response.intent.display_name
-response.intent_detection_confidence
