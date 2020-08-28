@@ -15,7 +15,7 @@ def sms_reply():
 
     # Create reply
     resp = MessagingResponse()
-    resp.message("You said: {}".format(msg) + " nothing I have")
+    resp.message("You said: {}".format(msg) + " nothing you have to see")
 
     return str(resp)
 
