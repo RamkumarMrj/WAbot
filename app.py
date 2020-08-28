@@ -21,8 +21,7 @@ def sms_reply():
     # Create reply
     resp = MessagingResponse()
     resp.message(reply)
-    #resp.message("You said: {}".format(msg) + " nothing you have to see")
-
+    
     return str(resp)
 
 if __name__ == "__main__":
