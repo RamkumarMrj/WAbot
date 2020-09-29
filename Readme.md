@@ -114,13 +114,48 @@ $ git push heroku master
 
 *Note :*
 
-*Environment creation :*
+## 1. Procfile
+ - A Procfile is a mechanism for declaring what commands are run by your application's dynos on the Heroku platform.
 
-```
-python -m venv myvenv
-myvenv\Scripts\activate
+```web gunicorn app:app```
 
-$env:PATH
-```
+ - Also, install gunicorn in your virtual environment:
+
+```pip install gunicorn```
+
+## 2. runtime.txt
+ - To specify a particular version of Python via your app's runtime.txt
+
+```python-3.7.2```
+
+## 3. requirements.txt¶
+ - Contains all 3rd party libraries required by your app.
+
+Simply do:
+
+``pip freeze > requirements.txt``
+
+to generate a requirements.txt file.
+
+
+## 4.Environment creation :
+
+Create : ```python -m venv myvenv```
+
+Activate : ```myvenv\Scripts\activate```
+
+To check path : 
+```$env:PATH``` (PS)
+
+## .gitignore¶
+
+ - .gitignore file specifies patterns which are used to exclude certain files in your working directory from your Git history.
+
+ - Open file and type file name to ignore :
+
+
+```myvenv/```
+
+```*.pyc```
 
 <div>
