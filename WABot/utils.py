@@ -1,5 +1,10 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "wabothelper-twkh-7ebd398885fe.json"
+
+"""   Add .json file Config from google cloud   """
+# os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "filename.json" - Syntax
+# "filename.json" path of .json file
+
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "wabothelper-twkh-xxxxxxxxxxx.json" 
 
 import dialogflow_v2 as dialogflow
 dialogflow_session_client = dialogflow.SessionsClient()
